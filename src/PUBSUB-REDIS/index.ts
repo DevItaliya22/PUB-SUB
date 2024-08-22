@@ -30,3 +30,12 @@ setInterval(() => {
 
 //TERMINAL 3
 // tsc and then node ./dist/PUBSUB-REDIS/index.js
+
+// so now if we want to make a chess like application 
+// then we basically can publish "game1" event when we start a game as "start"
+// and add the user1 to subscribe of game1 , then if we get a match with user2 , then we subscribe user2 to game1
+// now playing rights are only for user1,user2
+// and now if someone makes a move then we publish the move to game1 and then we can see the move in real time 
+// and for moves we can do PUBLISH game1 "move-e4" etc
+// and black and white logic should be in frontend..
+// and now if someone want to see the game then we can subscribe to game1 and see the moves in real time
